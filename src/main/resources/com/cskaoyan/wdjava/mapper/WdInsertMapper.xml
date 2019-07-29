@@ -86,6 +86,6 @@
         positionId = #{positionId,jdbcType=INTEGER},
         `row` = #{row,jdbcType=INTEGER},
         `column` = #{column,jdbcType=INTEGER}
-        where sid = #{id,jdbcType=INTEGER},
+        where sid = #{id,jdbcType=INTEGER}
     </update>
 </mapper>
