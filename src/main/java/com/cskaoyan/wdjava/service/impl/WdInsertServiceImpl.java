@@ -26,6 +26,14 @@ public class WdInsertServiceImpl implements WdInsertService {
 
         System.out.println(studentInsert);
 
-        return false;
+        return true;
+    }
+
+    @Override
+    public boolean updateStudentMessage(WdStudentInsert update) {
+        wdStudentInfoMapper.updateStudentMessage(update);
+
+        wdStudentInfoMapper.updateStudentMessageSeatArrange(update);
+        return true;
     }
 }

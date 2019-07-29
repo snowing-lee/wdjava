@@ -104,5 +104,24 @@ public class InsertController {
         return result;
     }
 
+    @RequestMapping(value = "/update/updateStudentMessage", method = RequestMethod.POST)
+    @ResponseBody
+    public Result updateStudentMessage(WdStudentInsert objInsert){
+        try{
+            boolean bool = insertService.updateStudentMessage(objInsert);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        Map<String,Object> map = new HashMap<>();
+
+
+
+        Result result = new Result();
+        result.setFailMsg("****数据不对"); // 核对数据,有空再做
+        result.setRet(true);
+        return result;
+    }
+
 
 }

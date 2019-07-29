@@ -8,4 +8,8 @@ public interface WdInsertMapper {
     void insertStudentInfo(WdStudentInsert studentInsert);
 
     void insertSeatArrange(WdStudentInsert studentInsert);
+
+    void updateStudentMessage(WdStudentInsert update);
+
+    void updateStudentMessageSeatArrange(WdStudentInsert update);
 }
