@@ -27,7 +27,7 @@ spring:
 server:
   servlet:
     context-path: /
-  port: 8083
+  port: 8082
 logging:
   path: /spring/manage
   level:
@@ -38,5 +38,6 @@ logging:
 wd:
   img:
     file:
-      uploadPath: c:/usr/file/image/
+      uploadPath: /usr/local/wdjava/
+#      uploadPath: c:/usr/file/image/
 

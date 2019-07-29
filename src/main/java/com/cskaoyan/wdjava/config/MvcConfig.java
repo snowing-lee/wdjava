@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ * 图片路径映射  /static/image/   --->  filePath
+ */
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
     @Value("${wd.img.file.uploadPath}")
