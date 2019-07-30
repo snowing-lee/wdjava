@@ -17,6 +17,7 @@ public class WdJavaExceptionHandler implements HandlerExceptionResolver {
     public ModelAndView resolveException(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("/error/default");
+        e.printStackTrace();
         if (e instanceof WdFileTypeException) {
             modelAndView.setViewName("/error/fileType");
         }
