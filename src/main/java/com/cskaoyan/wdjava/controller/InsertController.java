@@ -39,11 +39,9 @@ public class InsertController {
     public String importImage(@RequestParam("img") MultipartFile img, HttpServletRequest request, HttpServletResponse response, HttpSession session){
         String trueFileName = "";
         try {
-
             if (img.isEmpty()){
                 return "上传为空";
             }
-
             if (img!=null) {// 判断上传的文件是否为空
                 String path=null;// 文件路径
                 String type=null;// 文件类型
